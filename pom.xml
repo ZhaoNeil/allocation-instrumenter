@@ -171,7 +171,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.1</version>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -180,12 +180,8 @@
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <links>
-            <link>http://docs.oracle.com/javase/8/docs/api/</link>
-          </links>
-          <version>true</version>
-          <show>public</show>
+	<configuration>
+		<source>8</source>
         </configuration>
       </plugin>
       <!-- embed dependencies -->
