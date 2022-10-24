@@ -5,7 +5,7 @@ The memory allocation sampler uses a java agent based largely on the [Allocation
 When starting the JVM to be instrumented the location of the java agent and the properties file must be provided using the following VM argument.
 
 ```
-$ java -javaagent:/tmp/java-allocation-instrumenter-3.0-SNAPSHOT.jar=/tmp/flame.properties
+$ java -javaagent:./target/java-allocation-instrumenter-3.0-SNAPSHOT.jar=./target/flame.properties
 ```
 
 The sampler will generate an output file (by default stacks.txt) which needs to be processed by the FlameCollapse tool (provided in this project) to convert it to the format needed by the FlameGraph tools.
